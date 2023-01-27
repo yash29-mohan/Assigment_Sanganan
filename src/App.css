@@ -1,38 +1,121 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{    
+  padding: 20px 0 15px 0;
+  background: #08BEBC;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 27px;
+  color: #FFFFFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.alliance-logo {
+  margin: 30px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.appointment {
+  color: #564e4e;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.phone_status {
+  color: #564e4e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.your_number {
+  border-radius: 30px;
+  background-color: rgb(245, 195, 195);
+  padding: 6px;
+  margin: 20px;
+  color: red;
+  font-weight: 800;
+}
+
+.date_slot {
+  color: #564e4e;
+}
+
+.message {
+  font-weight: 700;
+  color: #000000;
+}
+
+.progress {
+  background: rgba(0, 150, 136, 0.260216);
+  border-radius: 22.5px;
+  padding: 6px;
+  margin: 20px 30px 0px;
+  font-weight: 700;
+  color: #009688;
+}
+
+.refresh {
+  background: #AFCBF3;
+  border-radius: 15px;
+  margin: 20px 30px 0px;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #3874CB;
+  cursor: pointer;
+}
+
+.address {
+  color: #564e4e;
+  margin-top: 20px;
+
+}
+.map {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background: #08bebc;
+  padding: 6px;
+  border-radius: 30px;
+   margin: 20px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none !important;
+  text-decoration-color: #ffffff;
+}
+
+.cancel {
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid #08bebc;
+  background: #ffffff;
+  color: #08bebc;
+  padding: 6px;
+  border-radius: 30px;
+  margin: 20px;
+  font-weight: 500;
+}
+
+.assistance {
+  padding: 6px;
+  font-weight: 700;
+  color: #242424;
+}
+@media only screen and (max-width: 768px) {
+  .refresh {
+    font-size: 15px;
   }
 }
